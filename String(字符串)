@@ -1,0 +1,37 @@
+"""
+什么是字符串：
+字符串是以单引号或者双引号括起来的任意文本
+"abc"
+'dfr'
+字符串不可变
+"""
+
+
+#创建字符串
+str1="sunck is a good man "
+str2="sunck is a nice man "
+str3="sunck is a handsome man "
+
+"""
+字符串运算
+"""
+#字符串连接
+str6="sunck is a"
+str7="  good man"
+str8=str6+str7
+print("str6=",str6)
+print("str7=",str7)
+print("str8=",str8)
+
+
+#输出重复字符串
+str9="good"
+str10=str9*3
+print("str10=",str10)
+
+#访问字符串中的某一个字符
+#通过索引下标查找字符，索引从0开始
+str11="snck is a good man "
+print(str11[1])
+#str11[1]="a"
+#print("str11=",str11)
