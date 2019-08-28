@@ -1,2 +1,2 @@
 # python
-just for learing python
+字符串的学习内容！
