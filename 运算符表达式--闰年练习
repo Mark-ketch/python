@@ -1,11 +1,9 @@
+#能被4整除但不能被100整除的年份为闰年，或者能被400整除的为闰年。
 num1=int(input("请输入年份："))
-阅读表达式：	a=num1%4
-功能：	b=num1%100
-值：	c=num1%400
-
-
-
- if a==0 or b==0 or c==0:
-'''	    print(num1,"是闰年")
-'''	else:
-算数运算符和算数运算表达式	    print(num1,"不是闰年")
+	a=num1%4
+	b=num1%100
+	c=num1%400
+ if (a==0 and b!=0) or c==0:
+   print(num1,"是闰年")
+else:
+   print(num1,"不是闰年")
