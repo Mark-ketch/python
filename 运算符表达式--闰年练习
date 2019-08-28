@@ -1,0 +1,11 @@
+num1=int(input("请输入年份："))
+阅读表达式：	a=num1%4
+功能：	b=num1%100
+值：	c=num1%400
+
+
+
+ if a==0 or b==0 or c==0:
+'''	    print(num1,"是闰年")
+'''	else:
+算数运算符和算数运算表达式	    print(num1,"不是闰年")
