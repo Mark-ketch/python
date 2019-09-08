@@ -1,0 +1,113 @@
+#存储5个人的年龄，求他们的平均年龄
+age1=43
+age2=23
+age3=46
+age4=33
+age5=22
+age6=26
+age7=33
+print((age1+age2+age3+age4+age5+age6+age7)/7)
+
+#思考：要存储100个人的年龄？
+#解决：使用列表
+#本质：使用有序的集合
+
+"""
+创建列表
+格式:列表名=[列表选项1，列表选项2，列表选项3，列表选项4…… 列表选项n]
+"""
+#创建一个空列表
+list1=[]
+print(list1)
+#创建带有元素的列表
+list2=[18,19,20,24,25]
+
+index=0
+sum=0
+while index<5:
+    sum+=list2[index]
+    index+=1
+    if index==5:
+        print("平均值为：%d"%(sum/5))
+
+#注意：列表中的元素数据可以是不同类型的
+list3=[1,2,"sunck","good",True]
+print(list3)
+
+
+#列表数据的访问
+#注意不要越界（下标超出了可表示的范围）
+#取值 格式 ：列表名[下标](从0开始数的)
+list4=[1,2,3,4]
+print(list4[3])
+
+#替换
+list4[3]=300
+print(list4)
+
+
+
+#列表操作
+
+#列表组合
+list5=[1,2,3]
+list6=[4,5,6]
+list7=list5+list6
+print(list7)
+
+#列表的重复
+list8=[1,2,3]
+print(list8*3)
+
+#判断列表中元素
+list9=[1,2,3,4]
+print(3 in list9)
+print(6 in list9)
+
+#列表截取
+list10=[1,2,3,4,5,6,7,8,9]
+print(list10[2:6])
+print(list10[3:])
+print(list10[:6])
+
+#二维度列表
+list11=[[1,2,3],[4,5,6],[7,8,9]]
+print(list11[0][2])
+
+#列表方法
+#append  在列表末尾添加新的元素
+list12=[1,2,3,4,5]
+list12.append(6)
+list12.append([7,8,9])
+print(list12)
+
+#extend 在末尾一次性追加另一个列表中的多个值
+list13=[1,2,3,4,5]
+list13.extend([6,7,8,9])
+print(list13)
+
+#在下标出添加一个元素，不覆盖原数据，原数据向后顺延
+list14=[1,2,3,4,5]
+list14.insert(2,300000000)
+list14.insert(2,[5,6,7])
+print(list14)
+
+#pop(x=list-1)
+#移除列表中指定下标处的元素（默认移除最后一个元素），并返回删除的数据
+list15=[1,2,3,45,5]
+list15.pop(2)
+print(list15.pop(2))
+print(list15)
+
+
+#remove  移除列表中的某个元素第一个匹配的结果
+list16=[1,2,3,3,3,4,5,6]
+list16.remove(4)
+print(list16)
+
+# clear 清楚列表中所有的数据
+list17=[1,2,3,4,5,6]
+list17.clear()
+print(list17)
+
+#视频26
