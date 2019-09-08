@@ -5,3 +5,5 @@ just for learing python
 
 
 布尔值：true and false
+
+列表：列表的使用，列表的增添，删除，增减。
