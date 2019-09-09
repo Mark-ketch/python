@@ -110,4 +110,89 @@ list17=[1,2,3,4,5,6]
 list17.clear()
 print(list17)
 
-#视频26
+#从列表中找出某个值第一个索引的值
+list18=[1,2,3,4,5,3,4,5,6]
+index18=list18.index(3)
+#圈定范围
+index19=list18.index(3,3,7)
+print(index18,index19)
+
+#列表中元素个数
+list20=[1,2,3,4,5]
+print(len(list20))
+
+#获取列表中的最大值
+list21=[1,2,3,4,5]
+print(max(list21))
+
+#获取列表中的最大值
+list22=[1,2,3,4,5]
+print(min(list22))
+
+#查看元素在列表中出现的次数
+list23=[1,2,3,4,5,6,7,5,5,5,5,6,4,3,5,6,7]
+print(list23.count(5))
+#删除列表中多余的元素
+num24=0
+all=list23.count(5)
+while num24<all-1:
+    list23.remove(5)
+    num24+=1
+print(list23)
+
+#倒叙
+list25=[1,2,3,4,6]
+list25.reverse()
+print(list25)
+
+
+#排序--升序
+list26=[2,4,5,8,2]
+list26.sort()
+print(list26)
+
+#拷贝
+#浅拷贝--引用拷贝
+list27=[1,2,3,4,5]
+list28=list27
+list28[1]=200
+print(list28)
+print(list27)
+print(id(list28))
+print(id(list27))
+
+#堆区和栈区
+#栈区：系统自动分配，程序结束自动释放内存
+#堆区：程序员手动开辟，手动释放
+#深拷贝
+list29=[1,2,3,4,5]
+list30=list29.copy()
+list30[1]=300
+print(list29)
+print(list30)
+print(id(list29))
+print(id(list30))
+
+#将元组转成列表
+list31=list((1,2,3,4,5))
+print(list31)
+
+#找出第二大的值
+listNum=[]
+num1=0
+while num1<10:
+    val=int(input())
+    listNum.append(val)
+    num1+=1
+print(listNum)
+#升序排序
+listNum.sort()
+print(listNum)
+
+count=listNum.count(listNum[len(listNum)-1])
+c=0
+while c < count:
+    listNum.pop()
+    c+=1
+print(listNum[len(listNum)-1])
+#视频27  25“
