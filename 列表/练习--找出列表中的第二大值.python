@@ -1,4 +1,5 @@
 #找出列表中的第二大的值
+#写法一：
 listNum=[]
 num1=0
 while num1<10:
@@ -16,3 +17,30 @@ while c < count:
     listNum.pop()
     c+=1
 print(listNum[len(listNum)-1])
+
+
+#写法二：
+listNum=[]
+num1=0
+while num1<10:
+    val=int(input())
+    listNum.append(val)
+    num1+=1
+print(listNum)
+if listNum[0]>=listNum[1]:
+    max=listNum[0]
+    sec=listNum[1]
+else:
+    max = listNum[1]
+    sec = listNum[0]
+
+index = 2
+while index < len(listNum):
+    if listNum[index]>max:
+        sec=max
+        max=listNum[index]
+    if listNum[index]>sec and listNum[index]<max:#and listNum[index]<max
+        sec=listNum[index]
+    index += 1
+
+print(sec)
