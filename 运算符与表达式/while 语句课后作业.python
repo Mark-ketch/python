@@ -5,7 +5,7 @@
 #4 从控制台输入一个数，分解质因数
 #5 从控制台输入一个字符串，告诉我它有多长不能用len（暂时做不了）
 #6 从控制台输入一个字符串，返回这个字符串中有多少个单词
-#7 从控制台输入一个字符串，返回这个字符串中有多少个单词
+
 
 
 #a->数字-》二进制
@@ -17,7 +17,7 @@ print(str37)
 
 print("a"=="a")
 
-#第一题
+#第一题：打印出所有三位数中的水仙花数
 num2=100
 while num2<=999:
     a1 = num2 % 10
@@ -27,7 +27,7 @@ while num2<=999:
         print("num2",num2)
     num2+=1
 
-#第二题
+#第二题：告诉我五位数中有多少个会回文数
 """
 num3=10000
 num4=0
@@ -43,7 +43,7 @@ print("回文数的个数为：",num4)
 """
 
 """
-#第三题
+#第三题： 从控制台输入一个数，判断是否为质数
 #质数又称素数。指在一个大于1的自然数中，除了1和此整数自身外，没法被其他自然数整除的数。
 
 num5=int(input("请输入一个数:"))
@@ -80,3 +80,40 @@ print("sum=%d"%(sum))
 #从第一个字符开始比较，谁的SCII值比较大就谁大，如果相等
 #就会比较下一个自负的ASCII值大小，那是谁的值大谁就大
 print("mdmdmfm">"mfgrghf")
+
+
+"""
+#第四题：从控制台输入一个数，分解质因数
+num2=int(input())
+i=2
+while num2!=1:
+    if num2%i==0:
+        print(i)
+        num2//=i
+    else:
+        i+=1
+"""
+
+#第六题：从控制台输入一个字符串，返回这个字符串中有多少个单词
+
+）
+str55=input()
+# lslld djget jgj kg 可能输入空格
+str56=str55.strip()
+index=0
+count=0
+while index < len(str56):
+    while str56[index]!=" ":
+        index+=1
+        if index==len(str56):
+           break
+            #结束循环
+
+    count+=1
+    print(count)
+    if index==len(str56):
+        break
+
+
+    while str56[index]==" ":
+        index+=1
