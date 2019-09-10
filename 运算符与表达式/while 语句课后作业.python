@@ -26,4 +26,57 @@ while num2<=999:
     if num2==a1**3+b1**3+pow(c1,3):
         print("num2",num2)
     num2+=1
- #第二题
+
+#第二题
+"""
+num3=10000
+num4=0
+while num3<100000:
+    b = num3 // 10000  # 个位数
+    d = num3 // 1000 % 10  # 十位数
+    c = num3 // 10 % 10  # 千位数
+    a = num3 % 10  # 万位数
+    if b==a and d==c:
+        num4+=1
+    num3+=1
+print("回文数的个数为：",num4)
+"""
+
+"""
+#第三题
+#质数又称素数。指在一个大于1的自然数中，除了1和此整数自身外，没法被其他自然数整除的数。
+
+num5=int(input("请输入一个数:"))
+if num5==2:
+    print(num5,"是质数")
+kk=2
+while kk <= num5 - 1:
+    if num5 % kk==0:
+        print(num5,"不是质数")
+    kk+=1
+if kk==num5:
+    print(num5, "是质数")
+# 有缺陷，不能让计算停止
+"""
+
+
+"""
+##计算字符串里面所有数字的和
+str=input("输入：")
+index=0
+sum=0
+
+while index< len(str):#此处不能<=
+    if str[index]>="0"and str[index]<="9":
+        sum+=int(str[index])
+    index += 1
+print("sum=%d"%(sum))
+
+"""
+
+
+
+#字符串比较大小
+#从第一个字符开始比较，谁的SCII值比较大就谁大，如果相等
+#就会比较下一个自负的ASCII值大小，那是谁的值大谁就大
+print("mdmdmfm">"mfgrghf")
