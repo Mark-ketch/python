@@ -1,0 +1,26 @@
+
+2019/10/16  更新
+# split(str="")  #print(str38.split("*"))
+# 以str为分隔符截取字符串，指定num，则仅截取num个字符串
+
+# splitlines([keepends])   安装（’|r','|r|n' ,  '|n' )分隔符，返回
+# keepds==True  会保留换行符
+
+# join()  以指定的字符串分隔符，将seq中的所有元素组合成一个字符串
+
+
+# replace(oidstr, newstr,count)
+# 用newstr替换oldstr，默认全部替换。如果指定了count
+# 那么只替换前count个
+
+
+# 创建一个字符串映射表
+print("*********")
+#     要转换的字符串  目标字符串
+t46 = str.maketrans("ac", "65")
+# a--6  c--5
+str47 = "sunck is a good  good man "
+str48 = str47.translate(t46)
+print(str48)
+
+
