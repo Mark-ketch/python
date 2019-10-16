@@ -192,3 +192,54 @@ print(str34.rstrip(),"*")
 #
 str35="*****kaige is a very very nice man***"
 print(str35.strip("*"))
+
+
+# split(str="")  #print(str38.split("*"))
+# 以str为分隔符截取字符串，指定num，则仅截取num个字符串
+str38 = "sunck**is*****a**good**man**!"
+list39 = str38.split("*")
+print(list39)
+c = 0
+for s in list39:
+    if len(s) > 0:
+        c += 1
+
+print(c)
+
+# splitlines([keepends])   安装（’|r','|r|n' ,  '|n' )分隔符，返回
+# keepds==True  会保留换行符
+
+str40 = """
+sunck is a good man!
+sunck is a nice man!
+sunck ia a handsome man!
+"""
+print(str40.splitlines(True))
+
+# join()  以指定的字符串分隔符，将seq中的所有元素组合成一个字符串
+list41 = ['sunck', 'is', 'a', 'good', 'man']
+str42 = " ".join(list41)
+print(str42)
+
+# max()  min（）
+
+str43 = "sunck is a good man !z"
+print(max(str43))
+print("*" + min(str43) + "*")
+
+# replace(oidstr, newstr,count)
+# 用newstr替换oldstr，默认全部替换。如果指定了count
+# 那么只替换前count个
+str44 = "sunck is a good  good man "
+str45 = str44.replace("good", "nice", 1)
+print(str44)
+print(str45)
+
+# 创建一个字符串映射表
+print("*********")
+#     要转换的字符串  目标字符串
+t46 = str.maketrans("ac", "65")
+# a--6  c--5
+str47 = "sunck is a good  good man "
+str48 = str47.translate(t46)
+print(str48)
