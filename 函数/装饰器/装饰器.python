@@ -22,3 +22,43 @@ def outer(func):
 f = outer(func1)
 f()
 
+#复杂点的装饰器
+def say(age):
+    print("sunck is %s years old "%(age))
+
+
+
+
+def outer(func):
+    def inner(age):
+        if age < 0:
+            age=0
+        func(age)
+        pass
+    return inner 
+
+#使用@符号将装饰器应用到函数
+#@Python2.4 支持使用@符号
+@outer  #相当于say=outer（say）
+def say(age):
+    print("sunck is %s years old "%(age))
+
+#say= outer(say)
+say(-10)
+
+
+#通用装饰器
+def outer(func):
+    def inner(*args,**kwargs):
+        #添加修改的功能
+        print("&&&&&&&&&&&&&&&")
+        func(*args,**kwargs)
+        pass
+    return inner
+
+@outer  #say=outer(say)
+def say (name, age):#理论上是无限制的，但是实际上最好不要超过6,7,个
+    print("my name is %s ,i am %d years old"%(name,age))
+
+say("kkkkkk",88888888888888888)
+#视频49
