@@ -1,0 +1,63 @@
+
+#需求：编写一个函数，给函数一个字符串和一个年龄，在函数内部打印出来
+
+#形参（形式参数）：定义函数时小括号的变量，本质是变量
+#参数必须按照顺序传递，个数目前要对应
+#def myPrint(str,age,hoby):
+ #   print(str,age)
+
+
+
+def myPrint(str,age):
+    print(str,age)
+
+#实参（实际参数）：调用函数时给函数传递到数据，本质是值
+myPrint("sunck is a good man",16)
+
+
+#函数的返回值
+"""
+编写函数，实现功能，给函数两个数，返回这两个数的和
+
+"""
+def mySum(num1,num2):
+    return num1+num2
+    #执行完return语句，该函数就结束return后面的函数不执行
+    print("*****")
+
+res=mySum(1,2)
+print(res)
+
+
+#传递参数
+"""
+值传递：传递的不可变类型
+string  tuple number 是不可变的
+
+
+
+"""
+
+
+def func1(num):
+    num=20
+
+
+temp=20
+func1(temp) # num=temp
+print(temp)
+
+
+
+"""
+
+引用传递:传递的可变类型
+list , dict , set 是可变的
+"""
+
+def func2(lis):
+    lis[0]=100
+li =[1,2,3,4,5]
+func2=(li)
+print(li)
+#视频46
